@@ -17,7 +17,7 @@ const Login = () => {
     try {
       // Send login request to the backend
       const response = await axios.post('http://localhost:5000/api/users/login', {
-        username: email,
+        email: email,
         password,
       });
 
